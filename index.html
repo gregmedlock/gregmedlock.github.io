@@ -2,14 +2,54 @@
 layout: default
 title: Greg Medlock
 ---
-<div class="blurb">
-	<h1>Hello, I am Greg Medlock</h1>
-	<p>I'm a PhD student in the Department of Biomedical Engineering at the University of Virginia, where I am advised by Dr. Jason Papin.<p>
-	<p>I am broadly interested in quantitative modeling of biological systems and how interactions at small scales (e.g. molecular interactions between a protein and another compound) lead to the actions we interpret at larger scales (e.g. growth and division of bacterial cells).</p>
-  <p>I use this blog to share and learn about technical aspects of my field of research and ways to "do science". Blog posts may span a large range of "meta"-ness, from notes about interactions between science and society to useful snippets of code, with a few posts about my hobbies peppered in.</p>
-</div><!-- /.blurb -->
-<a class="twitter-timeline" href="https://twitter.com/medlockgreg?ref_src=twsrc%5Etfw"
-	data-height=400>
-Tweets by @medlockgreg
-</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<div class="row">
+	<div class="column">
+		<div class="blurb">
+			<h1>Hello, I am Greg Medlock</h1>
+			<p>I'm a PhD student in the Department of Biomedical Engineering at the University of Virginia, where I am advised by Dr. Jason Papin.<p>
+			<p>I am broadly interested in quantitative modeling of biological systems and how interactions at small scales (e.g. molecular interactions between a protein and another compound) lead to the actions we interpret at larger scales (e.g. growth and division of bacterial cells).</p>
+		  <p>I use this blog to share and learn about technical aspects of my field of research and ways to "do science". Blog posts may span a large range of "meta"-ness, from notes about interactions between science and society to useful snippets of code, with a few posts about my hobbies peppered in.</p>
+		</div><!-- /.blurb -->
+  </div>
+  <div class="row">
+		<a class="twitter-timeline" href="https://twitter.com/medlockgreg?ref_src=twsrc%5Etfw"
+			data-height=400>
+		Tweets by @medlockgreg
+		</a>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
